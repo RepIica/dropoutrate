@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+
+		<meta charset="UTF-8">
+		 
+		<!-- If IE use the latest rendering engine -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		 
+		<!-- Set the page to the width of the device and set the zoon level -->
+		<meta name="viewport" content="width = device-width, initial-scale = 1">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/montreal" type="text/css"/>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+	</head>
+	<body>
+		<!--
+		<button class="btn btn-success" onclick="$(this).hide()";>click me!</button>
+		<ul id=nav>
+			<li>dropouts.com</li>			
+			<li>states</li>			
+			<li>edu</li>			
+			<li>sources</li>			
+			<li>faq</li>			
+			<li>about</li>			
+		</ul> -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+
+			<div class="dropdown">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+			    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+			    <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+			    <li><a href="index.html">Home</a></li>
+			    <li><a href="reducing.html">Reducing Dropouts</a></li>
+			    <li><a href="takeaction.html">Take Action</a></li>
+			    <li><a href="#">About</a></li>
+			    <li><a href="#">Sources</a></li>
+			    <li><a href="#">FAQ</a></li>
+			    <li><a href="#" id="space"></a></li>
+			    <li role="separator" class="divider"></li>
+			    <li><a href="http://nces.ed.gov">NCES.ed.gov</a></li>
+			  </ul>
+			</div>
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand"  href="index.html"><p id="dropout">The Dropout Rate</p></a>					
+				</div>
+<!--
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Design</a></li>
+								<li><a href="#">Development</a></li>
+								<li><a href="#">Consulting</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+-->
+			</div><!--End of container-->
+
+		</nav>
+
+		<div class="jumbotron">
+			<div class="container-canvas"> <!--Canvas placed into arbitrary div to center canvas-->
+				<canvas id="canvas" width="1900" height="860"></canvas> <!--480 for library pic-->				
+			</div>
+			<div class="jum">
+				<h1>The Dropout Rate</h1>
+				<p>Every year, over 1.2 million students drop out of high school in the United States alone. That’s a student every 26 seconds – or 7,000 a day.</p>
+			</div>					
+		</div>
+
+		<div id="scrollspace"></div>
+		
+		<div class="container" id="wrap">
+			<div class="page-header">The average dropout rate across the country during the 2013-2014 school year is 6.4%. Click on states below for state dropout averages.</div>	
+			<div class="row">
+				<div class="col-xs-12" id="map"></div> <!--SVG MAP-->
+				
+				<div class="modal fade" id="myModal" role="dialog"> <!--Modal for state dropout rate-->
+				    <div class="modal-dialog modal-sm" id="modal-box">
+				      <div class="modal-content">
+
+				        <div class="modal-header">
+				          <button type="button" class="close" data-dismiss="modal">&times;</button>
+				          <h4 class="modal-title">State: <span id="state"></span></h4>
+				        </div>
+
+				        <div class="modal-body" id="average1">
+				          <span class="price" id="average">&nbsp;</span><span id="state"></span> high school dropout rate
+				        </div>
+
+				      </div> <!--End modal-content-->
+				    </div> <!--End modal-dialog-->
+				</div><!--End myModal-->
+			</div>	
+			<!--<div id="map2" class="img-responsive"></div>-->
+			<div class="row">
+				<div class=col-xs-12 id="title">
+					<h1>Did You Know?</h1>
+				</div>
+			</div>
+
+			<div class="row" id="didyou">
+				<div class="col-md-6">
+					<ol>
+						<li>About 25% of high school freshmen fail to graduate from high school on time.</li>
+						<li>The U.S., which had some of the highest graduation rates of any developed country, now ranks 22nd out of 27 developed countries.
+						<li>The dropout rate has fallen 3% from 1990 to 2010 (12.1% to 7.4%).</li>
+						<li>The percentage of graduating Latino students has significantly increased. In 2010, 71.4% received their diploma vs. 61.4% in 2006. However, Asian-American and white students are still far more likely to graduate than Latino & African-American students.</li>
+						<li>A high school dropout will earn $200,000 less than a high school graduate over his lifetime. And almost a million dollars less than a college graduate.</li>						
+					</ol>
+				</div>
+				<div class="col-md-6" >
+					<ol start="6">
+						<li>In 2010, 38 states had higher graduation rates. Vermont had the highest rate, with 91.4% graduating. And Nevada had the lowest with 57.8% of students graduating.</li>
+						<li>Almost 2,000 high schools across the U.S. graduate less than 60% of their students.</li>
+						<li>These “dropout factories” account for over 50% of the students who leave school every year.</li>
+						<li>1 in 6 students attend a dropout factory. 1 in 3 minority students (32%) attend a dropout factory, compared to 8% of white students.</li>
+						<li>In the U.S., high school dropouts commit about 75% of crimes.</li>
+					</ol>
+				</div>
+			</div> 
+		</div> <!--End of container-->
+
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/747/svg-map-selector.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,137 @@
+.dropdown{
+  float: left;
+}
+#dropdownMenu1{
+  background:rgba(95, 106, 110, 0.3);
+  border:none;
+  height: 50px;
+  color:gray;
+}
+#space{
+  height:600px;
+}
+
+body{
+  background-color: #FA7C92;
+}
+.parallax{
+  z-index: -1;
+  background-image: url(kids.jpg);
+
+  min-height: 700px; 
+
+  /* the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#right-side {
+  font-family:'Open Sans', sans-serif;
+  background-color: #66A88C;
+}
+
+.pledge2 {
+  margin: auto;
+  font-size: 26px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+
+}
+.donate-box {
+  width:340px;
+  height: 625px;
+  background:#f9f9f9;
+  padding:30px;
+  padding-right: 30px;
+  border:6px solid #ddd;
+  border-radius: 15px;
+  margin: 80px;
+  align-content: 50px;
+  background-color: white;
+}
+
+a.donate {
+  text-decoration:none;
+
+}
+.donate-btn {
+  background:#66A88C;
+  text-align:center;
+  padding:20px;
+  margin-top:36px;
+  color:#000000 ;
+  border-radius:5px;
+  text-decoration:none;
+  border-style: solid;
+}
+a:link{
+  background-color: transparent;
+  text-decoration: none;
+  color: #000000 }
+  a:visited {color:#000000; background-color:transparent; text-decoration:none
+}
+#invest{
+  font-size: 24px; 
+}
+.donate-btn:hover {
+  background:#FA7C92;
+}
+
+.pledge-title  {
+  font-size:21px;
+  line-height: 65px;
+}
+
+.pledge-number  {
+  font-size:28px;
+  color:#1aaad6;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:800;
+}
+
+.pledge {
+  border-top:1px solid #ddd;
+  padding:2px 0px;
+}
+.kids { background-repeat: no-repeat; 
+  }
+iframe {
+  margin-left: 130px;
+}
+#Apledge {
+  background-color:#66A88C; 
+  padding-top: 50px;;
+  line-height: 24px;
+  padding-bottom: 50px;
+  align-content: center;
+}
+#vid{
+  color: #f8f8f8;
+  margin-left: 130px;
+  padding-bottom: 20px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  text-shadow: 0px 0px 15px gray;
+}
+#hpledge {
+  font-size: 23px;
+  padding-bottom:1px;
+  padding-top: 10px;
+  margin-top: 5px;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 130px;
+  text-shadow: 0px 0px 1px gray;
+}
+#aboutpledge{
+  width: 700px;
+  margin-left: 130px;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+  text-shadow: 0px 0px 1px gray;
+}
+@font-face{
+  font-family: Gravity;
+  src: url(gravity/Gravity-Book.otf);
+}
