@@ -1,0 +1,2 @@
+hi, why are you reading this?
+This was the first directly commited file I added to my git repository for learning purposes.
