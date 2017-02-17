@@ -1,0 +1,111 @@
+body{
+	margin:0;
+	font: 14px Montserrat;
+}
+.dropdown{
+	float: left;
+}
+#dropdownMenu1{
+	background:rgba(95, 106, 110, 0.3);
+	border:none;
+	height: 50px;
+	color:gray;
+}
+#space{
+	height:600px;
+}
+.jumbotron{
+	margin: 0;
+	width: 0px;
+	height: 0px;
+}
+#scrollspace{
+	z-index: 99;
+	height: 800px;
+	width: 100%;/*
+	background:rgba(255, 0, 0, 0.3);*/
+}
+#wrap{
+	background-color: white;
+}
+.container-canvas{ /*Canvas placed into arbitrary div to center canvas*/
+	z-index: -1;
+    top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+    margin: 0 auto;
+    width: 1900px;
+    position: fixed;
+}
+.jum{
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	position: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 90px;
+
+	min-width: 60%;
+	max-width: 500px;
+	min-height: 20%;
+	max-height: 30px;
+
+	color: #E8E8E8;/* offwhite
+	text-shadow: 0px 0px 4px gray;*/
+	text-shadow: 0px 0px 25px black
+}
+.jum p{
+	font-family: Gravity;
+}
+#map {
+	/*
+	width: 930px;
+	height: 630px; */
+	height: 630px;
+}
+#average1{
+	background: #fff;
+	border-radius: 4px;
+	padding: 5px;
+	text-align: center;
+	font: bold 14px/16px "Open Sans", Arial, sans-serif;
+	text-transform: uppercase;
+	background-color: #fff7c0;
+	padding-bottom: 25px;
+}
+#average1 span.price{
+	font-size: 72px;
+	line-height: 96px;
+	display: block;
+}
+#modal-box{
+	top: 300px;
+}
+
+/*
+#stars{
+	width: 65%;
+	margin: auto;
+	font: 16px "Open Sans";
+	color: #4F4F4F;
+	font-weight: 300;
+	line-height: 1.8;
+}
+#map2 {
+	width: 350px;
+	height: 350px;
+	border: 2px solid cyan;
+}
+*/
+
+@media (min-width: 855px) and (max-width: 1222px){
+
+}
+@font-face{
+	font-family: Gravity;
+	src: url(gravity/Gravity-UltraLight.otf);
+}

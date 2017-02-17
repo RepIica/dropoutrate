@@ -1,0 +1,23 @@
+
+.dropdown{
+	float: left;
+}
+#dropdownMenu1{
+	background:rgba(95, 106, 110, 0.3);
+	border:none;
+	height: 50px;
+	color:gray;
+}
+#space{
+	height:600px;
+}
+.row{
+	background-color: #f8f8f8;
+}
+img{
+	margin-left: 22%;
+ 	width: 60%;
+}
+#info{
+	margin-top: 50px;
+}
